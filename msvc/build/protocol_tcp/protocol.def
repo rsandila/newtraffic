@@ -1,0 +1,14 @@
+LIBRARY	protocol_tcp
+EXPORTS
+	canDoProtocol				@1
+	InitProtocol				@2
+	DestroyProtocol				@3
+	CreateConnection			@4
+	DestroyConnection			@5
+	SendConnectionData			@6
+	ReceiveConnectionData		@7
+	ListenForConnections		@8
+	StopListenForConnections	@9
+	AcceptServerConnection		@10
+	TransferedData				@11
+	ReadyForData				@12

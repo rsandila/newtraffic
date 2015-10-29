@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="protocol_tcp" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug Win32">
+				<Option output="Debug/protocol_tcp" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Debug" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-D_DEBUG" />
+					<Add option="-D_WINDOWS" />
+					<Add option="-D_USRDLL" />
+					<Add option="-DPROTOCOL_TCP_EXPORTS" />
+					<Add option="-DDLL_EXPORTS" />
+					<Add option="-W" />
+					<Add option="-g" />
+					<Add option="-O0" />
+				</Compiler>
+				<Linker>
+					<Add library="Ws2_32" />
+				</Linker>
+			</Target>
+			<Target title="Release Win32">
+				<Option output="Release/protocol_tcp" prefix_auto="1" extension_auto="1" />
+				<Option object_output="Release" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-DWIN32" />
+					<Add option="-DNDEBUG" />
+					<Add option="-D_WINDOWS" />
+					<Add option="-D_USRDLL" />
+					<Add option="-DPROTOCOL_TCP_EXPORTS" />
+					<Add option="-W" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Unit filename="protocol.def" />
+		<Unit filename="../../../protocols/tcp/tcp_connection.cpp" />
+		<Unit filename="../../../protocols/tcp/tcp_proto.cpp" />
+		<Unit filename="../../../protocols/tcp/tcp_server.cpp" />
+		<Unit filename="../../../protocols/tcp/traffic_tcp.cpp" />
+		<Unit filename="../../../protocols/tcp/tcp_connection.h" />
+		<Unit filename="../../../protocols/tcp/tcp_proto.h" />
+		<Unit filename="../../../protocols/tcp/tcp_server.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

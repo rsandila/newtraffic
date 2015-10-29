@@ -1,0 +1,6 @@
+LIBRARY	reply_echo
+EXPORTS
+	InitReply		@1
+	DestroyReply	@2
+	GetReply		@3
+	DeleteReply		@4
